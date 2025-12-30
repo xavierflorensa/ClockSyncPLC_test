@@ -1,0 +1,68 @@
+Name: NetLogic
+Type: NetLogicCategoryFolder
+Children:
+- Name: PLCClockSync
+  Id: g=9681e6c22da61b389f5d700b18e4dfad
+  Type: NetLogic
+  Children:
+  - Name: PLC_Year
+    Type: BaseDataVariableType
+    DataType: Int32
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/GuardLogix5380/Tags/Controller Tags/PLC_Time[0]"
+  - Name: PLC_Month
+    Type: BaseDataVariableType
+    DataType: Int32
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/GuardLogix5380/Tags/Controller Tags/PLC_Time[1]"
+  - Name: PLC_Day
+    Type: BaseDataVariableType
+    DataType: Int32
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/GuardLogix5380/Tags/Controller Tags/PLC_Time[2]"
+  - Name: PLC_Hour
+    Type: BaseDataVariableType
+    DataType: Int32
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/GuardLogix5380/Tags/Controller Tags/PLC_Time[3]"
+  - Name: PLC_Minute
+    Type: BaseDataVariableType
+    DataType: Int32
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/GuardLogix5380/Tags/Controller Tags/PLC_Time[4]"
+  - Name: PLC_Second
+    Type: BaseDataVariableType
+    DataType: Int32
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/GuardLogix5380/Tags/Controller Tags/PLC_Time[5]"
+  - Name: PLC_Milisecond
+    Type: BaseDataVariableType
+    DataType: Int32
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/GuardLogix5380/Tags/Controller Tags/PLC_Time[6]"
+  - Name: SystemTime
+    Type: BaseDataVariableType
+    DataType: DateTime
+  - Class: Method
+    Name: SetTime

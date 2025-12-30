@@ -1,0 +1,13 @@
+Name: Controller Tags
+Type: FolderType
+Children:
+- Name: PLC_Time
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  ValueRank: OneDimension
+  ArrayDimensions: [7]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "PLC_Time"
